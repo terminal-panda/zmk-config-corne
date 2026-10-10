@@ -7,7 +7,10 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      # Pinned so local and CI builds match and upstream changes can't break the
+      # build unexpectedly. To update: set a newer commit from zmkfirmware/zmk main,
+      # run scripts/build-firmware.sh --update, check it builds, then push.
+      revision: 4dd95d7840eb3d5a3f59bb29fbf1ab054715ef85 # main, 2026-10-09
       import: app/west.yml
   self:
     path: config

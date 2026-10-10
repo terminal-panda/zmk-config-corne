@@ -1,0 +1,130 @@
+layout: {zmk_keyboard: corne}
+layers:
+  BASE:
+  - [TAB, Q, W, E, R, T, Y, U, I, O, P, BSPC]
+  - [LCTRL, A, S, D, F, G, H, J, K, L, ;, '''']
+  - [LSHFT, Z, X, C, V, B, N, M, ',', ., /, ESC]
+  - - LALT
+    - LGUI
+    - {t: RET, h: SYM}
+    - {t: SPACE, h: NAV}
+    - LGUI
+    - LALT
+  SYM:
+  - - {t: ▽, type: trans}
+    - '!'
+    - '@'
+    - '#'
+    - $
+    - '%'
+    - ^
+    - '&'
+    - '*'
+    - (
+    - )
+    - DEL
+  - - {t: ▽, type: trans}
+    - {t: Apps, s: launcher}
+    - Term
+    - GitHub
+    - Files
+    - {t: Grok, s: Bot}
+    - '-'
+    - '='
+    - '['
+    - ']'
+    - \
+    - '`'
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - X
+    - T3 Code
+    - {t: ▽, type: trans}
+    - Web
+    - _
+    - +
+    - '{'
+    - '}'
+    - '|'
+    - '~'
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  NAV:
+  - - {t: ▽, type: trans}
+    - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    - '7'
+    - '8'
+    - '9'
+    - '0'
+    - DEL
+  - - {t: ▽, type: trans}
+    - LGUI
+    - LALT
+    - LCTRL
+    - LSHFT
+    - {t: ▽, type: trans}
+    - LEFT
+    - DOWN
+    - UP
+    - RIGHT
+    - '-'
+    - '='
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: CAPS, s: word}
+    - HOME
+    - PG DN
+    - PG UP
+    - END
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  SYS:
+  - [F11, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F12]
+  - - {t: ▽, type: trans}
+    - BT 1
+    - BT 2
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - PREV
+    - VOL DN
+    - VOL UP
+    - NEXT
+    - PP
+    - MUTE
+  - - {t: ▽, type: trans}
+    - PSCRN
+    - Alt+PSCRN
+    - Gui+PSCRN
+    - {t: ▽, type: trans}
+    - {t: BT CLR, s: unpair}
+    - BRI DN
+    - BRI UP
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {type: held}
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}

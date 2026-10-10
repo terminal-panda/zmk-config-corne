@@ -1,0 +1,16 @@
+# keymap-drawer settings for scripts/draw-keymap.sh.
+parse_config:
+  # Show the SYM app keys by name instead of their F13+ keycodes.
+  raw_binding_map:
+    "&kp F13": {t: Apps, s: launcher}
+    "&kp F14": Term
+    "&kp F15": GitHub
+    "&kp F16": Files
+    "&kp F17": {t: Grok, s: Bot}
+    "&kp F18": X
+    "&kp F19": T3 Code
+    "&kp F24": Web
+    "&caps_word": {t: CAPS, s: word}
+    "&bt BT_SEL 0": {t: BT 1}
+    "&bt BT_SEL 1": {t: BT 2}
+    "&bt BT_CLR": {t: BT CLR, s: unpair}

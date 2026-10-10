@@ -1,6 +1,23 @@
 name: Build ZMK firmware
-on: [push, pull_request, workflow_dispatch]
+on:
+  # Only firmware inputs trigger a build; keymap drawings and scripts don't.
+  push:
+    paths:
+      - "config/**"
+      - "boards/**"
+      - "zephyr/**"
+      - "build.yaml"
+      - ".github/workflows/build.yml"
+  pull_request:
+    paths:
+      - "config/**"
+      - "boards/**"
+      - "zephyr/**"
+      - "build.yaml"
+      - ".github/workflows/build.yml"
+  workflow_dispatch:
 
 jobs:
   build:
-    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    # Same ZMK commit as config/west.yml; update both together.
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@4dd95d7840eb3d5a3f59bb29fbf1ab054715ef85
